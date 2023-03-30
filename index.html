@@ -1,6 +1,9 @@
-<button onclick='hack()'>??????????</button>
+<input id="input" type="text">
+<button onclick='hack()'></button>
+<iframe src="url" id="iframe"></iframe> 
 <script>
     function hack(){
-        window.location = "https://www.youtube.com/"
+        console.log(document.getElementById('input').value)
+        document.getElementById('iframe').src=document.getElementById('input').value
     }
 </script>
