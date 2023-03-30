@@ -1,10 +1,17 @@
 <input id="input" type="text">
 <button onclick='hack()'>hack</button>
+<button onclick='goto("https://www.youtube.com/")'>youtube</button>
+<button onclick='goto("https://www.aol.com/games/")'>AOL games</button>
+<button onclick='goto("https://www.crazygames.com/")'>good games</button>
+
 <iframe src="https://www.youtube.com/watch?v=APorJUzYois" id="iframe"></iframe> 
 <script>
     function hack(){
         console.log(document.getElementById('input').value)
         document.getElementById('iframe').src=document.getElementById('input').value
         document.getElementById('iframe').contentWindow.location.reload()
+    }
+    function goto(place){
+                window.location = place
     }
 </script>
